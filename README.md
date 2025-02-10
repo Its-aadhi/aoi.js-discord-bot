@@ -251,42 +251,38 @@ client.on("ready", () => {
 client.login();
 ```
 
-Features
-Responds to regular commands
-Supports slash commands
-Provides server and user information
-Moderation commands (clear messages, kick, ban, mute, etc.)
-Examples
-Ping Command:
+## Features
 
-Regular: !ping
-Slash: /ping
-Hello Command:
+- Responds to regular commands
+- Supports slash commands
+- Provides server and user information
+- Moderation commands (clear messages, kick, ban, mute, etc.)
 
-Regular: !hello
-Slash: /hello
-Server Info Command:
-
-Slash: /serverinfo
-User Info Command:
-
-Slash: /userinfo
-Troubleshooting
-Bot not responding to commands:
-
-Ensure the bot has the necessary permissions in the server.
-Check the bot token in the .env file.
-Verify that the bot is running and connected to the server.
-Slash commands not working:
-
-Ensure the bot has the applications.commands scope enabled.
-Check if the slash commands are registered properly.
-Contributing
+## Examples
+- Ping Command:
+  - Regular: `!ping`
+  - Slash: `/ping`
+- Hello Command:
+  - Regular: `!hello`
+  -Slash: `/hello`
+- Server Info Command:
+  - Slash: `/serverinfo`
+- User Info Command:
+  - Slash: `/userinfo`
+## Troubleshooting
+- Bot not responding to commands:
+  - Ensure the bot has the necessary permissions in the server.
+  - Check the bot token in the .env file.
+  - Verify that the bot is running and connected to the server.
+- Slash commands not working:
+  - Ensure the bot has the applications.commands scope enabled.
+  - Check if the slash commands are registered properly.
+## Contributing
 Feel free to submit issues or pull requests if you find any bugs or have suggestions for new features.
 
-Credits
-Aoi.js - The library used to build the bot
-@akarui/aoi.db - Database library
-License
+## Credits
+- Aoi.js - The library used to build the bot
+- @akarui/aoi.db - Database library
+## License
 This project is licensed under the MIT License.
 
