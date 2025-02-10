@@ -1,6 +1,7 @@
+
 # Discord Bot with Aoi.js
 
-This is a simple Discord bot built using the Aoi.js library. The bot includes various commands, including both regular and slash commands.
+This is a simple Discord bot built using the Aoi.js library. The bot includes various commands, including both regular, moderation,and slash commands.
 
 ## Table of Contents
 
@@ -38,7 +39,11 @@ This is a simple Discord bot built using the Aoi.js library. The bot includes va
     npm install aoi.js @akarui/aoi.db
     ```
 
+
+
 3. Create a `.env` file in the root directory and add your bot token:
+
+
     ```env
     DISCORD_TOKEN=your-bot-token-here
     ```
@@ -50,7 +55,11 @@ This is a simple Discord bot built using the Aoi.js library. The bot includes va
     node index.js
     ```
 
-2. The bot will automatically load commands from the [commands](http://_vscodecontentref_/1) directory.
+2. The bot will automatically load commands from the 
+
+commands
+
+ directory.
 
 ## Commands
 
@@ -186,7 +195,7 @@ This is a simple Discord bot built using the Aoi.js library. The bot includes va
       name: "unban",
       code: `
       $unban[$message[1]]
-      $sendMessage[User with ID $message[1] has been unbanned.;no]
+      $sendMessage[User with ID $message[1]] has been unbanned.;no]
       $onlyPerms[ban;You do not have permission to use this command.]
       `
     };
@@ -220,7 +229,11 @@ This is a simple Discord bot built using the Aoi.js library. The bot includes va
 
 ## Configuration
 
-Ensure your [index.js](http://_vscodecontentref_/2) file is set up to handle both regular and slash commands:
+Ensure your 
+
+index.js
+
+ file is set up to handle both regular and slash commands:
 
 ```javascript
 // filepath: /index.js
@@ -259,30 +272,41 @@ client.login();
 - Moderation commands (clear messages, kick, ban, mute, etc.)
 
 ## Examples
-- Ping Command:
+
+- **Ping Command**:
   - Regular: `!ping`
   - Slash: `/ping`
-- Hello Command:
+
+- **Hello Command**:
   - Regular: `!hello`
-  -Slash: `/hello`
-- Server Info Command:
+  - Slash: `/hello`
+
+- **Server Info Command**:
   - Slash: `/serverinfo`
-- User Info Command:
+
+- **User Info Command**:
   - Slash: `/userinfo`
+
 ## Troubleshooting
-- Bot not responding to commands:
+
+- **Bot not responding to commands**:
   - Ensure the bot has the necessary permissions in the server.
-  - Check the bot token in the .env file.
+  - Check the bot token in the `.env` file.
   - Verify that the bot is running and connected to the server.
-- Slash commands not working:
-  - Ensure the bot has the applications.commands scope enabled.
+
+- **Slash commands not working**:
+  - Ensure the bot has the `applications.commands` scope enabled.
   - Check if the slash commands are registered properly.
+
 ## Contributing
+
 Feel free to submit issues or pull requests if you find any bugs or have suggestions for new features.
 
 ## Credits
-- Aoi.js - The library used to build the bot
-- @akarui/aoi.db - Database library
-## License
-This project is licensed under the MIT License.
 
+- [Aoi.js](https://aoi.js.org/) - The library used to build the bot
+- [@akarui/aoi.db](https://www.npmjs.com/package/@akarui/aoi.db) - Database library
+
+## License
+
+This project is licensed under the MIT License.
