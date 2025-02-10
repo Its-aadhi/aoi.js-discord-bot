@@ -3,5 +3,7 @@ module.exports = [{
     code: `
     My ping is $pingMs
     $comment[This returns your current bot ping!]
+    $footer[Requested by $username]
+    $addTimestamp
     `
 }]
