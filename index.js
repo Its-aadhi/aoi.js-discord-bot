@@ -15,4 +15,11 @@ const client = new AoiClient({
 });
 
 const loader = new LoadCommands(client);
-loader.load(client.cmd, "./commands")
+loader.load(client.cmd, "./commands");
+
+// Register slash commands
+client.on("ready", () => {
+  client.application.commands.set(client.cmd.slash);
+});
+
+client.login();
