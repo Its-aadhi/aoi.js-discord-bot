@@ -76,7 +76,7 @@ commands
 
 - **Hello Command**: Greets the user
     ```javascript
-    // filepath: /commands/hello.js
+    // filepath: /commands/utility/hello.js
     module.exports = {
       name: "hello",
       code: `$sendMessage[Hello, $username!;no]`
@@ -85,13 +85,37 @@ commands
 
 - **Clear Command**: Deletes a specified number of messages
     ```javascript
-    // filepath: /commands/clear.js
+    // filepath: /commands/moderation/clear.js
     module.exports = {
       name: "clear",
       code: `
       $clear[$message[1]]
       $sendMessage[Cleared $message[1] messages.;no]
       $onlyPerms[manageMessages;You do not have permission to use this command.]
+      `
+    };
+    ```
+
+    **Help Command**: Lists all available commands
+    ```javascript
+    // filepath: /commands/utility/help.js
+    module.exports = {
+      name: "help",
+      code: `
+      $sendMessage[
+        **Help Menu**
+        \`!ping\` - Responds with Pong!
+        \`!hello\` - Greets the user
+        \`!serverinfo\` - Displays server information
+        \`!userinfo\` - Displays user information
+        \`!clear\` - Deletes a specified number of messages
+        \`!warn\` - Warns a user
+        \`!kick\` - Kicks a user
+        \`!ban\` - Bans a user
+        \`!unban\` - Unbans a user
+        \`!mute\` - Mutes a user
+        \`!unmute\` - Unmutes a user
+      ;no]
       `
     };
     ```
