@@ -1,8 +1,8 @@
 const { AoiClient, LoadCommands } = require("aoi.js");
 
 const client = new AoiClient({
-  token: "Discord Bot Token",
-  prefix: "Discord Bot Prefix",
+  token: "bot-token-here",
+  prefix: "set your prefix here",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
   events: ["onMessage", "onInteractionCreate"],
   database: {
