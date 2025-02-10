@@ -249,7 +249,7 @@ client.on("ready", () => {
 });
 
 client.login();
-
+```
 
 Features
 Responds to regular commands
