@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@akarui/aoi.db": "^2.3.3",
     "aoi.js": "^6.9.0"
   }
 }

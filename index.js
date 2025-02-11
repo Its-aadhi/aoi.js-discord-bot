@@ -1,9 +1,10 @@
+require('dotenv').config();
 const { AoiClient, LoadCommands } = require("aoi.js");
 
 const client = new AoiClient({
-  token: "bot-token-here",
-  prefix: "set your prefix here",
-  intents: ["MessageContent", "Guilds", "GuildMessages"],
+  token: process.env.DISCORD_TOKEN,
+  prefix: "!",
+  intents: ["GUILDS", "GUILD_MESSAGES"],
   events: ["onMessage", "onInteractionCreate"],
   database: {
     type: "aoi.db",
@@ -12,6 +13,13 @@ const client = new AoiClient({
     tables: ["main"],
     securityKey: "572ca1fc2038da21973311f7b63ee62b",
   }
+});
+
+client.status({
+  text: "Hello World!",
+  type: "PLAYING",
+  status: "online",
+  time: 12
 });
 
 const loader = new LoadCommands(client);
