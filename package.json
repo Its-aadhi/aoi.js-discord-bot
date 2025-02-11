@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@akarui/aoi.db": "^2.3.3",
-    "aoi.js": "^6.9.0"
+    "aoi.js": "^6.9.0",
+    "dotenv": "^16.4.7"
   }
 }

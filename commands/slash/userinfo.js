@@ -1,6 +1,7 @@
 module.exports = {
   name: "userinfo",
-  type: "slash",
+  type: "interaction",
+  prototype: "slash",
   code: `
   $interactionReply[Username: $username
   User ID: $authorID

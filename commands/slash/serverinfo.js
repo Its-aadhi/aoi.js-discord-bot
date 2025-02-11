@@ -1,6 +1,7 @@
 module.exports = {
   name: "serverinfo",
-  type: "slash",
+  type: "interaction",
+  prototype: "slash",
   code: `
   $interactionReply[Server Name: $serverName
   Total Members: $membersCount
