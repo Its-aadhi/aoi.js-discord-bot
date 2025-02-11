@@ -20,7 +20,7 @@ client.status({
   type: "STREAMING",
   status: "online",
   time: 12,
-  url: "hhttps://www.twitch.tv/itsaadhi"
+  url: "https://www.twitch.tv/itsaadhi"
 });
 
 const loader = new LoadCommands(client);
@@ -28,10 +28,14 @@ loader.load(client.cmd, "./commands");
 
 console.log("Loaded commands:", client.cmd);
 
-client.on("ready", () => {
+client.on("ready", async () => {
   if (client.cmd && client.cmd.slash) {
-    client.application.commands.set(client.cmd.slash);
-    console.log("Slash commands registered:", client.cmd.slash);
+    try {
+      await client.application.commands.set(client.cmd.slash);
+      console.log("Slash commands registered globally:", client.cmd.slash);
+    } catch (error) {
+      console.error("Error registering slash commands:", error);
+    }
   } else {
     console.error("Slash commands are not defined.");
   }
