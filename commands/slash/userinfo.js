@@ -6,6 +6,6 @@ module.exports = {
   $interactionReply[Username: $username
   User ID: $authorID
   Joined Server: $memberJoinedDate
-  Account Created: $creationDate[$authorID]]
+  Account Created: $creationDate[$authorID]] 
   `
 };
