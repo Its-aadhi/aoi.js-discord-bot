@@ -5,4 +5,4 @@ module.exports = {
     type: "interaction",
     prototype: "slash",
     code: `$interactionReply[Avatar URL: $userAvatar[$mentioned[1;yes]]]`
-  };
+  }; 
