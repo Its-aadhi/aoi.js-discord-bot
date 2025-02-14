@@ -30,8 +30,8 @@ This is a simple Discord bot built using the Aoi.js library. The bot includes va
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Its-aadhi/discord-bot.git
-    cd discord-bot
+    https://github.com/Its-aadhi/aoi.js-discord-bot.git
+    cd aoi.js-discord-bot
     ```
 
 2. Install the dependencies:
